@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Operasi — Library Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside>
+    <div class="sidebar-header">
+        <div class="logo-icon">OS</div>
+        <span>MATERI PEMROGRAMAN WEB</span>
+    </div>
+    <div class="nav-container" id="sidebarNav">
+        <div class="nav-group-label">ALL MATERI</div>
+        </div>
+</aside>
+
+<main id="contentArea">
+    <section id="materi1" class="content-section active">
+        <div class="badge">Module 01</div>
+        <h1>Sistem Operasi: Fundamental</h1>
+        <p>Sistem Operasi (Operating System) adalah perangkat lunak yang berfungsi sebagai pengelola sumber daya komputer dan sebagai penghubung antara pengguna dengan perangkat keras komputer.</p>
+        <div class="card">
+            <h3>Fungsi Utama Sistem Operasi</h3>
+            <ul class="feature-list">
+                <li>Manajemen proses</li>
+                <li>Manajemen memori</li>
+                <li>Manajemen file dan penyimpanan</li>
+                <li>Manajemen input/output</li>
+                <li>Pengaturan keamanan dan proteksi sistem</li>
+            </ul>
+            <p style="margin-top: 20px; font-style: italic;">Sistem operasi memastikan komputer dapat digunakan dengan nyaman, stabil, dan efisien.</p>
+        </div>
+    </section>
+
+    <section id="materi2" class="content-section">
+        <div class="badge">Module 02</div>
+        <h1>Jenis & Fungsi Sistem Operasi</h1>
+        <p>Sistem operasi memiliki berbagai jenis sesuai kebutuhan perangkat. Pada dasarnya, sistem operasi bertugas mengatur jalannya program dan mengelola sumber daya komputer.</p>
+        <div class="card">
+            <h3>Jenis Sistem Operasi</h3>
+            <div class="grid-layout">
+                <div class="info-box"><strong>Desktop OS</strong><p>Windows, Linux, macOS</p></div>
+                <div class="info-box"><strong>Mobile OS</strong><p>Android, iOS</p></div>
+                <div class="info-box"><strong>Server OS</strong><p>Ubuntu Server, Windows Server</p></div>
+                <div class="info-box"><strong>Embedded OS</strong><p>OS pada IoT, mesin ATM, Smart TV</p></div>
+            </div>
+            <h3 style="margin-top: 30px;">Fungsi Utama</h3>
+            <ul class="feature-list">
+                <li>Menyediakan antarmuka pengguna</li>
+                <li>Mengatur eksekusi program</li>
+                <li>Menangani perangkat keras</li>
+                <li>Menjaga keamanan sistem</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi3" class="content-section">
+        <div class="badge">Module 03</div>
+        <h1>Proses dan Thread</h1>
+        <p>Proses adalah program yang sedang dieksekusi dan memiliki ruang memori tersendiri. Sedangkan thread adalah unit terkecil dari proses yang dapat dijalankan secara independen.</p>
+        
+        
+        
+        <div class="card">
+            <h3>Perbedaan Proses & Thread</h3>
+            <table class="modern-table">
+                <thead>
+                    <tr><th>Fitur</th><th>Proses</th><th>Thread</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Resource</td><td>Butuh resource lebih besar</td><td>Ringan & cepat</td></tr>
+                    <tr><td>Memori</td><td>Memiliki ruang memori sendiri</td><td>Berbagi memori dengan proses utama</td></tr>
+                </tbody>
+            </table>
+            <h3 style="margin-top: 30px;">Manfaat Threading</h3>
+            <ul class="feature-list">
+                <li>Meningkatkan kinerja multitasking</li>
+                <li>Mempercepat eksekusi aplikasi</li>
+                <li>Cocok untuk aplikasi paralel</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi4" class="content-section">
+        <div class="badge">Module 04</div>
+        <h1>Manajemen Proses</h1>
+        <p>Sistem operasi bertanggung jawab mengatur proses mulai dari dibuat, dijalankan, dihentikan hingga dihapus dari memori.</p>
+        
+        
+        
+        <div class="card">
+            <h3>Status Proses</h3>
+            <div class="step-box">New → Ready → Running → Waiting → Terminated</div>
+            <p style="margin-top:20px;"><strong>PCB (Process Control Block):</strong> Struktur data yang menyimpan informasi penting proses seperti state, program counter, register dan memori.</p>
+        </div>
+    </section>
+
+    <section id="materi5" class="content-section">
+        <div class="badge">Module 05</div>
+        <h1>Penjadwalan CPU</h1>
+        <p>Penjadwalan CPU menentukan proses mana yang akan mendapat giliran menggunakan CPU. Tujuannya untuk efisiensi dan mempercepat waktu respon.</p>
+        <div class="card">
+            <h3>Algoritma Penjadwalan CPU</h3>
+            <ul class="feature-list">
+                <li>FCFS (First Come First Serve)</li>
+                <li>SJF (Shortest Job First)</li>
+                <li>Round Robin</li>
+                <li>Priority Scheduling</li>
+            </ul>
+            <p style="margin-top: 20px; font-style: italic;">Pemilihan algoritma sangat mempengaruhi performa sistem operasi.</p>
+        </div>
+    </section>
+
+    <section id="materi6" class="content-section">
+        <div class="badge">Module 06</div>
+        <h1>Sinkronisasi Proses</h1>
+        <p>Sinkronisasi proses diperlukan ketika beberapa proses mengakses data yang sama agar tidak terjadi konflik.</p>
+        <div class="card">
+            <h3>Konsep Penting</h3>
+            <ul class="feature-list">
+                <li><strong>Race Condition:</strong> dua proses berebut resource</li>
+                <li><strong>Critical Section:</strong> bagian kode yang tidak boleh dipakai bersamaan</li>
+                <li><strong>Semaphore & Mutex:</strong> alat pengendali akses</li>
+            </ul>
+            <p style="margin-top: 20px;">Tanpa sinkronisasi, data mudah rusak/invalid.</p>
+        </div>
+    </section>
+
+    <section id="materi7" class="content-section">
+        <div class="badge">Module 07</div>
+        <h1>Deadlock</h1>
+        <p>Deadlock terjadi ketika dua atau lebih proses saling menunggu resource satu sama lain dan tidak ada yang dapat melanjutkan eksekusi.</p>
+        <div class="card">
+            <h3>Syarat Deadlock</h3>
+            <p>Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait</p>
+            <h3 style="margin-top: 20px;">Pencegahan & Penanganan</h3>
+            <ul class="feature-list">
+                <li>Resource Allocation Graph</li>
+                <li>Banker’s Algorithm</li>
+                <li>Deteksi & Recovery</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi8" class="content-section">
+        <div class="badge">Module 08</div>
+        <h1>Memori Utama</h1>
+        <p>Memori utama digunakan untuk menyimpan data dan instruksi yang sedang diakses CPU.</p>
+        <div class="card">
+            <p>Kecepatan memori sangat berpengaruh pada performa sistem.</p>
+            <h3 style="margin-top: 20px;">Jenis Memori</h3>
+            <ul class="feature-list">
+                <li>RAM (Random Access Memory)</li>
+                <li>ROM (Read Only Memory)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi9" class="content-section">
+        <div class="badge">Module 09</div>
+        <h1>Manajemen Memori</h1>
+        <p>Manajemen memori mengatur pembagian ruang memori agar setiap proses dapat berjalan secara efisien tanpa saling mengganggu.</p>
+        <div class="card">
+            <h3>Teknik Manajemen</h3>
+            <ul class="feature-list">
+                <li><strong>Paging:</strong> membagi memori menjadi frame kecil</li>
+                <li><strong>Segmentation:</strong> pembagian berdasarkan struktur program</li>
+                <li><strong>Swapping:</strong> memindahkan proses dari RAM ke disk sementara</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi10" class="content-section">
+        <div class="badge">Module 10</div>
+        <h1>Virtual Memory</h1>
+        <p>Virtual Memory memungkinkan sistem menjalankan program yang ukurannya lebih besar daripada kapasitas RAM dengan memanfaatkan media penyimpanan sekunder.</p>
+        <div class="card">
+            <h3>Komponen Utama</h3>
+            <ul class="feature-list">
+                <li>Paging</li>
+                <li>Page Table</li>
+                <li>Page Fault</li>
+                <li>Demand Paging</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi11" class="content-section">
+        <div class="badge">Module 11</div>
+        <h1>Sistem Berkas (File System)</h1>
+        <p>Sistem berkas bertugas mengelola penyimpanan, pengorganisasian, serta pengaksesan file pada perangkat komputer.</p>
+        <div class="card">
+            <h3>Operasi File</h3>
+            <p>Create, Read, Write, Delete, Rename</p>
+            <h3 style="margin-top: 20px;">Struktur Direktori</h3>
+            <p>Single Level, Two Level, Tree Directory, Graph Directory</p>
+        </div>
+    </section>
+
+    <section id="materi12" class="content-section">
+        <div class="badge">Module 12</div>
+        <h1>Manajemen I/O</h1>
+        <p>Manajemen I/O menangani komunikasi antara perangkat keras dan sistem operasi melalui driver serta controller.</p>
+        <div class="card">
+            <h3>Tujuan Manajemen I/O</h3>
+            <ul class="feature-list">
+                <li>Menyediakan antarmuka untuk perangkat</li>
+                <li>Mengatur proses transfer data</li>
+                <li>Menangani interrupt dari perangkat</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi13" class="content-section">
+        <div class="badge">Module 13</div>
+        <h1>Proteksi dan Keamanan Sistem</h1>
+        <p>Proteksi memastikan sumber daya tidak digunakan secara tidak sah. Keamanan mencakup perlindungan dari ancaman internal maupun eksternal.</p>
+        <div class="card">
+            <ul class="feature-list">
+                <li>Authentication (Login, Password)</li>
+                <li>Authorization</li>
+                <li>Encryption</li>
+                <li>Firewall</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi14" class="content-section">
+        <div class="badge">Module 14</div>
+        <h1>Implementasi File System</h1>
+        <p>Membahas cara data disimpan dalam disk, alokasi blok, indexing, serta manajemen metadata.</p>
+        <div class="card">
+            <h3>Metode Penyimpanan</h3>
+            <ul class="feature-list">
+                <li>Contiguous Allocation</li>
+                <li>Linked Allocation</li>
+                <li>Indexed Allocation</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi15" class="content-section">
+        <div class="badge">Module 15</div>
+        <h1>Distributed Operating System</h1>
+        <p>Sistem yang menghubungkan beberapa komputer dan bekerja seolah satu sistem tunggal.</p>
+        <div class="card">
+            <h3>Contoh Implementasi</h3>
+            <ul class="feature-list">
+                <li>Cluster Server</li>
+                <li>Cloud Computing</li>
+                <li>Grid System</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi16" class="content-section">
+        <div class="badge">Module 16</div>
+        <h1>Sistem Operasi Mobile</h1>
+        <p>Berfokus pada OS perangkat bergerak yang hemat daya dan ringan.</p>
+        <div class="card">
+            <ul class="feature-list">
+                <li>Android (Linux Based)</li>
+                <li>iOS</li>
+                <li>HarmonyOS</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi17" class="content-section">
+        <div class="badge">Module 17</div>
+        <h1>Sistem Berbasis Linux</h1>
+        <p>Linux adalah sistem operasi open source yang stabil dan banyak digunakan pada server.</p>
+        <div class="card">
+            <h3>Kelebihan Linux</h3>
+            <p>Gratis, Aman, Ringan, dan Stabil</p>
+            <h3 style="margin-top: 20px;">Distro Populer</h3>
+            <p>Ubuntu, Debian, Fedora, Arch Linux</p>
+        </div>
+    </section>
+
+    <section id="materi18" class="content-section">
+        <div class="badge">Module 18</div>
+        <h1>Shell dan Command Line</h1>
+        <p>Shell adalah antarmuka teks untuk berinteraksi dengan sistem operasi melalui perintah.</p>
+        <div class="card">
+            <h3>Perintah Dasar CLI</h3>
+            <ul class="feature-list">
+                <li><code>cd</code> → pindah direktori</li>
+                <li><code>ls/dir</code> → melihat file</li>
+                <li><code>cp</code> → copy file</li>
+                <li><code>rm</code> → hapus file</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi19" class="content-section">
+        <div class="badge">Module 19</div>
+        <h1>Administrasi Sistem Operasi</h1>
+        <p>Administrator sistem bertugas mengelola konfigurasi, user, jaringan, backup, dan keamanan OS.</p>
+        <div class="card">
+            <ul class="feature-list">
+                <li>User Management</li>
+                <li>Install Package</li>
+                <li>Monitoring Resource</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi20" class="content-section">
+        <div class="badge">Module 20</div>
+        <h1>Virtualisasi dan Kontainer</h1>
+        <p>Virtualisasi memungkinkan menjalankan banyak OS dalam satu mesin fisik.</p>
+        
+        
+        
+        <div class="card">
+            <ul class="feature-list">
+                <li><strong>VM:</strong> Full OS</li>
+                <li><strong>Container:</strong> Shared kernel (seperti Docker) yang lebih ringan dibanding VM</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="materi21" class="content-section">
+        <div class="badge">Module 21</div>
+        <h1>Review & Ringkasan Akhir</h1>
+        <p>Pada materi ini dilakukan rangkuman umum seluruh pembahasan sistem operasi..</p>
+        <div class="card">
+            <h3>Poin Utama</h3>
+            <ul class="feature-list">
+                <li>Konsep OS, proses, thread, CPU scheduling</li>
+                <li>Manajemen memori, virtual memory, file system</li>
+                <li>Keamanan, sistem terdistribusi, Linux & mobile OS</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<script>
+    const titles = {
+        1: "Fundamental", 2: "Jenis OS", 3: "Process/Thread", 4: "Process Mgmt", 
+        5: "Scheduling", 6: "Sync", 7: "Deadlock", 8: "Memory", 
+        9: "Memory Mgmt", 10: "Virtual Memory", 11: "File System", 
+        12: "I/O Mgmt", 13: "Security", 14: "File Impl", 15: "Distributed",
+        16: "Mobile OS", 17: "Linux Sys", 18: "Shell CLI", 19: "Sys Admin",
+        20: "Virtualization", 21: "Final Review"
+    };
+
+    const nav = document.getElementById('sidebarNav');
+    for(let i=1; i<=21; i++) {
+        const item = document.createElement('div');
+        item.className = i === 1 ? 'nav-item active' : 'nav-item';
+        item.innerHTML = `<span>P${i} &mdash; ${titles[i]}</span>`;
+        item.onclick = () => {
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            item.classList.add('active');
+            document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+            document.getElementById('materi'+i).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+        nav.appendChild(item);
+    }
+</script>
+</body>
+</html>
